@@ -1,0 +1,111 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="inner-banner text-center">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+               
+                <li>
+                    <span>demo</span>
+                </li>
+            </ul><!-- /.breadcrumb -->
+            <h1>Request a Demo</h1>
+        </div><!-- /.container -->
+    </div><!-- /.inner-banner -->
+    <section class="meeting-form-wrapper sec-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div class="meeting-form-content my-auto">
+                        <div class="sec-title">
+                            <span>Request a meeting</span>
+                            <h2>Let’s meet with our expert <br> team members</h2>
+                        </div><!-- /.sec-title -->
+                        <div class="single-form-step">
+                            <div class="count-box">
+                                <div class="inner-box">
+                                    01
+                                </div><!-- /.inner-box -->
+                            </div><!-- /.count-box -->
+                            <div class="text-box">
+                                <h3>Fill out the Form</h3>
+                                <p>Provide us with a bit of information so that we can follow up with you. If you’re a current client, just enter your client code so we can zero in your details.</p>
+                            </div><!-- /.text-box -->
+                        </div><!-- /.single-form-step -->
+                        <div class="single-form-step">
+                            <div class="count-box">
+                                <div class="inner-box">
+                                    02
+                                </div><!-- /.inner-box -->
+                            </div><!-- /.count-box -->
+                            <div class="text-box">
+                                <h3>What's Next?</h3>
+                                <p>One of our best team members will reach out to schedule a meeting at a time that is very convenient for you.</p>
+                            </div><!-- /.text-box -->
+                        </div><!-- /.single-form-step -->
+                        <div class="single-form-step">
+                            <div class="count-box">
+                                <div class="inner-box">
+                                    03
+                                </div><!-- /.inner-box -->
+                            </div><!-- /.count-box -->
+                            <div class="text-box">
+                                <h3>What all is Covered?</h3>
+                                <p>We’ll find out more about your challenges and show you how Payonline’s HR and payroll software can help you overcome them.</p>
+                            </div><!-- /.text-box -->
+                        </div><!-- /.single-form-step -->
+                    </div><!-- /.meeting-form-content -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <form  class="meeting-form contact-form-vaidated">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" name="company_name" placeholder="Company name">
+                            </div><!-- /.col-md-12 -->
+                            <div class="col-md-12">                            
+                                <input type="text" name="client_code" placeholder="Client code">
+                            </div><!-- /.col-md-12 -->
+                            <div class="col-md-6">                            
+                                <input type="text" name="fname" placeholder="First name">
+                            </div><!-- /.col-md-12 -->
+                            <div class="col-md-6">                            
+                                <input type="text" name="lname" placeholder="Last name">
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-12">                            
+                                <input type="text" name="role" placeholder="Your role with company">
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-12">                            
+                                <input type="text" name="email" placeholder="Email address">
+                            </div><!-- /.col-md-12 -->
+                            <div class="col-md-6">                            
+                                <input type="text" name="zip" placeholder="Zip code">
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-6">                            
+                                <input type="text" name="phone" placeholder="Phone Number">
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-12">                            
+                                <textarea name="message" placeholder="Comment or questions"></textarea>
+                            </div><!-- /.col-md-12 -->
+                            <div class="col-md-12">
+                                <div class="btn-box">
+                                    <button type="button" class="thm-btn">Request a free demo</button>
+                                    <span class="btn-tag-line">Start the conversation<i class="payonline-icon-share"></i></span>
+                                </div><!-- /.btn-box -->
+                            </div><!-- /.col-md-12 -->
+                        </div><!-- /.row -->
+                    </form><!-- /.meeting-form -->
+                    <div class="result"></div><!-- /.result -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.meeting-form-wrapper -->
+
+    
+{% endblock %}
+{% block script_code %}
+
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="inner-banner text-center">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+            </ul><!-- /.breadcrumb -->
+            <h1>Blog Details</h1>
+        </div><!-- /.container -->
+    </div><!-- /.inner-banner -->
+
+    <section class="single-blog-page sec-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="featured-image-box">
+                        <img src="{% static "frontend/images/single-blog-1-1.jpg" %}" alt="Awesome Image"/>
+                    </div><!-- /.featured-image-box -->
+                    <div class="text-block">
+                        <h3>Is it Time to Audit your Employee Benefits Package?</h3>
+                        <div class="meta-info">
+                            <a href="#">by admin</a><!--
+                            --><span class="sep">-</span><!--
+                            --><a href="#">20 May, 2019</a><!--
+                            --><span class="sep">-</span><!--
+                            --><a href="#">2 Comments</a>
+                        </div><!-- /.meta-info -->
+                        <p>Lorem Ipsum is simply dummy text of the rinting and typesetting industry has been the ndustry standard dummy text ever sincer they llam id condimentum purus In non ex at ligula fringilla bortis. Ut et mauris auctor, aliquet nulla sed, aliquam mauris. Vestibulum sed malesuada dolor. Integer fringilla odio a dolor aliquet, eu euismod lectus porttitor. Proin et libero nec eros eleifend commodo Phasellus sodales des volutpat diam, id sagittis purus egestas dapibus. Donec bibendum est quis mi commodo blandit. Maecenas pellentesque, massa vitae faucibus consectetur, ante magna gravida magna, ut venenatis massa augue et odio. Aliquam luctus viverra velit, non euismod ligula congue sed.</p>
+                        <br>
+                        <p>Mauris nunc leo, sollicitudin a ligula ut, iaculis bibendum lorem. Duis gravida suscipit purus, at consequat de diam sagittis sit amet. Mauris sed nisl vel urna egestas elementum eget quis ipsum. Nulla a enim et justoed facilisis ornare. Sed ante sem, dignissim a vehicula et, rutrum volutpat turpis. Praesent id leo lacinia lesuada tortor ut, lobortis leo. Cras eget sollicitudin lorem. Etiam commodo ultricies luctus. Integer porttitor ligula eget quam blandit finibus. Suspendisse potenti. Nulla blandit augue orci, eget tristique massa fermentum sed duis ac maximus nulla, et pharetra turpis. Maecenas odio tortor, egestas sit amet erat nec, maximus mattis exque purus nibh, porttitor nec aliquam id, auctor a nulla. Curabitur sed pharetra ligula. Donec nequey odio derdiet non libero ornare, commodo venenatis magna praesent ac congue ligula.</p>
+                    </div><!-- /.text-block -->
+                    <div class="share-block clearfix">
+                        <div class="tags-block float-left"><span>Tags:</span><a href="#">payroll</a>,<a href="#">employees</a>,<a href="#">hiring</a>,<a href="#">startups</a></div><!-- /.tags-block -->
+                        <div class="social-block float-right">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div><!-- /.social-block -->
+                    </div><!-- /.share-block -->
+                    <div class="author-block">
+                        <div class="author-img-box">
+                            <img src="{% static "frontend/images/author-1-1.jpg" %}" alt="Awesome Image"/>
+                        </div><!-- /.img-box -->
+                        <div class="author-text-block">
+                            <h3>Tricia Pritzel</h3>
+                            <p>Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text uctor a nulla. Curabitur sed pharetra ligula. Donec nequey odio derdiet non libero ornare.</p>
+                            <a href="#" class="read-more">View all posts</a>
+                        </div><!-- /.text-block -->
+                    </div><!-- /.author-block -->
+                    <div class="comments-block">
+                        <h3 class="comments-block-title">2 Comments</h3>
+                        <div class="single-comment-block">
+                            <div class="comment-img-block">
+                                <img src="{% static "frontend/images/comment1-1.jpg" %}" alt="Awesome Image"/>
+                            </div><!-- /.comment-img-block -->
+                            <div class="comment-text-block">
+                                <h3>Guy Artez</h3>
+                                <div class="meta-info">
+                                    <a href="#">8 June, 2019</a><!--
+                                    --><span class="sep">-</span><!--
+                                    --><a href="#">4:00 pm</a>
+                                </div><!-- /.meta-info -->
+                                <p>Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer nullam condimentum purus. In non ex at ligula fringilla lobortis et aliquet.</p>
+                                <!-- <a href="#" class="thm-btn reply-btn">reply</a> -->
+                            </div><!-- /.comment-text-block -->
+                        </div><!-- /.single-comment-block -->
+                        <div class="single-comment-block">
+                            <div class="comment-img-block">
+                                <img src="{% static "frontend/images/comment1-2.jpg" %}" alt="Awesome Image"/>
+                            </div><!-- /.comment-img-block -->
+                            <div class="comment-text-block">
+                                <h3>Lovetta Capoccia</h3>
+                                <div class="meta-info">
+                                    <a href="#">8 June, 2019</a><!--
+                                    --><span class="sep">-</span><!--
+                                    --><a href="#">4:00 pm</a>
+                                </div><!-- /.meta-info -->
+                                <p>Lorem Ipsum is simply dummy text of the rinting and typesetting been the industry standard dummy text ever sincer nullam condimentum purus. In non ex at ligula fringilla lobortis et aliquet.</p>
+                                <!-- <a href="#" class="thm-btn reply-btn">reply</a> -->
+                            </div><!-- /.comment-text-block -->
+                        </div><!-- /.single-comment-block -->
+                    </div><!-- /.comments-block -->
+                    <div class="comment-form-block">
+                        <h3 class="comment-form-block-title">Leave a Comment</h3>
+                        <form action="#" class="meeting-form contact-form comment-form">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" name="fname" placeholder="First name">
+                                </div><!-- /.col-md-12 -->
+                                <div class="col-md-4">                            
+                                    <input type="text" name="lname" placeholder="Last name">
+                                </div><!-- /.col-md-12 -->
+                                <div class="col-md-4">                            
+                                    <input type="text" name="email" placeholder="Email address">
+                                </div><!-- /.col-md-12 -->
+                                <div class="col-md-12">                            
+                                    <textarea name="message" placeholder="Comment or questions"></textarea>
+                                </div><!-- /.col-md-12 -->
+                                <div class="col-md-12">
+                                    <div class="btn-box text-left">
+                                        <button type="submit" class="thm-btn">Send Comment</button>
+                                    </div><!-- /.btn-box -->
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </form><!-- /.meeting-form -->
+                    </div><!-- /.comment-form-block -->
+                </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.single-blog-page -->
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="inner-banner text-center">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+               
+                <li>
+                    <span>Trial</span>
+                </li>
+            </ul><!-- /.breadcrumb -->
+            <h1>Free Trial</h1>
+        </div><!-- /.container -->
+    </div><!-- /.inner-banner -->
+
+
+    <section class="contact-page-content sec-pad">
+        <div class="container">
+            <div class="sec-title text-center">
+                <span>Contact with us</span>
+                <h2>Free Trial <br></h2>
+            </div><!-- /.sec-title -->
+            <form action="#!" class="meeting-form contact-form contact-form-vaidated">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your name">
+                    </div><!-- /.col-md-12 -->
+                    <div class="col-md-6">                            
+                        <input type="text" name="email" placeholder="Email address">
+                    </div><!-- /.col-md-12 -->
+                    <div class="col-md-6">                            
+                        <input type="text" name="phone" placeholder="Phone Number">
+                    </div><!-- /.col-md-12 -->
+                    <div class="col-md-6">                            
+                        <select class="selectpicker" name="discussion">
+                            <option value="option1">For business</option>
+                            <option value="option2">For business</option>
+                            <option value="option3">For business</option>
+                            <option value="option4">For business</option>
+                            <option value="option5">For business</option>
+                        </select>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-12">                            
+                        <textarea name="message" placeholder="Comment or questions"></textarea>
+                    </div><!-- /.col-md-12 -->
+                    <div class="col-md-12">
+                        <div class="btn-box">
+                            <button type="submit" class="thm-btn">Request a free Trial</button>
+                            <span class="btn-tag-line">Start the conversation<i class="payonline-icon-share"></i></span>
+                        </div><!-- /.btn-box -->
+                    </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+            </form><!-- /.meeting-form -->
+            <div class="result"></div><!-- /.result -->
+        </div><!-- /.container -->
+    </section><!-- /.contact-page-content -->
+
+    
+{% endblock %}
+{% block script_code %}
+
+{% endblock %}

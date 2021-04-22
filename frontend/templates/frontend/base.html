@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+      <title>{{seo_title}}</title>
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="description" content="{{seo_description}}">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i%7CCovered+By+Your+Grace" rel="stylesheet">
+        <link rel="stylesheet" href="{% static "frontend/css/bootstrap.min.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/animate.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/magnific-popup.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/font-awesome.min.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/hover-min.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/plugins/payonline-icon/style.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/plugins/bands-icon/style.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/owl.carousel.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/owl.theme.default.min.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/bootstrap-select.min.css" %}">
+
+        <!-- main template stylesheet -->
+        <link rel="stylesheet" href="{% static "frontend/css/style.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/custom.css" %}">
+        <link rel="stylesheet" href="{% static "frontend/css/responsive.css" %}">
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+      {% block styles_code %}
+      {% endblock %}
+   </head>
+   <body id="home-version-6" class="home-version-6" data-style="default">
+      <!-- <a href="#main_content" data-type="section-switch" class="return-to-top"><i class="fa fa-chevron-up"></i></a> -->
+      <div id="main_content">
+           <header class="site-header ">
+               <div class="top-bar">
+            <div class="container-fluid clearfix">
+                <div class="left-content float-left">
+                    <p><i class="fa fa-flag"></i>Looking for your W2, 1095-C or 1099? <a href="#"></a></p>
+                </div><!-- /.left-content -->
+                <div class="right-content float-right">
+                    <ul>
+                        <li>Digital Human Capital Management Solution  </li>
+                        <!-- <li><a href="#test-search" class="popup-with-zoom-anim"><i class="fa fa-search"></i></a></li> -->
+                        <li><a class=" mybtn" href="/signin/">
+                            Sign In
+                        </a></li>
+                    </ul>
+                </div><!-- /.left-content -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /.top-bar -->
+       <!-- /.top-bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light header-navigation myheader stricky header-style-two">
+            <div class="container clearfix">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="logo-box clearfix">
+                    <a class="navbar-brand" href="/">
+                        <img src="{% static "frontend/images/logo.png" %}" alt="Awesome Image"/>
+                        <span>ADITSH</span> HR
+                    </a>
+                    <button class="menu-toggler" data-target="#main-nav-bar">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div><!-- /.logo-box -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="main-navigation" id="main-nav-bar">
+                    <ul class=" navigation-box">
+                        <li class="">
+                            <a href="/">Home</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/about/">About</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#!">Products</a>
+                             <ul class="sub-menu ">
+                                <li><a href="/recruitement/">Recruitment</a></li>
+                                <li><a href="/attendance/">Leave & Attendance</a></li>
+                                <li><a href="/strategichr/">Strategic HR</a></li>
+                                <li><a href="/payroll/">Payroll</a></li>
+                                <li><a href="/compliances/">Comppliances</a></li>
+                                
+                            </ul><!--/.sub-menu-->
+                            
+                        </li>
+                        <li>
+                            <a href="/price/">Pricing</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/ourteam/">Our Team</a>
+                            <!-- <ul class="sub-menu ">
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="location.html">Locations</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404 Page</a></li>
+                                <li><a href="request-metting.html">Request Meeting</a></li>
+                                <li><a href="signin.html">Sign In</a></li>
+                            </ul>/.sub-menu -->
+                        </li>
+                        <li>
+                            <a href="/blog/">Blog</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="#!">Single News</a></li>
+                                <li><a href="news-sidebar.html">News Sidebar</a></li>
+                                <li><a href="news-details-sidebar.html">Single News Sidebar</a></li>
+                                <li><a href="white-papers.html">White Pagers</a></li>
+                            </ul>/.sub-menu -->
+                        </li>
+                        <li>
+                            <a href="/demo/">Book a Demo</a>
+                        </li>
+                        <li>
+                            <a href="/contact/">Contact Us</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <div class="right-side-box">
+                    <a href="/trial/" class="signin-btn">Free Trial</a>
+                </div>
+                <!-- /.right-side-box -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header><!-- /.site-header -->
+         {% block content %}
+         {% endblock %}
+    <footer class="site-footer myfooter">
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 d-flex">
+                        <div class="footer-widget footlogo my-auto">
+                            <a href="/">
+                                HCM MANAGEMENT
+                            </a>
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-lg-2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex">
+                        <div class="footer-widget links-widget my-auto links-widget-one">
+                            <div class="title-box">
+                                <h3>Services</h3>
+                            </div><!-- /.title-box -->
+                            <ul class="link-lists">
+                                <li><a href="/recruitment/">Recruitment</a></li>
+                                <li><a href="/attendance/">Leave & Attendance</a></li>
+                                <li><a href="/payroll/">Payroll</a></li>
+                                <li><a href="/strategichr/">Stratgic HR</a></li>
+                                <li><a href="/compliances/">Compliances</a></li>
+                            </ul>
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 d-flex">
+                        <div class="footer-widget links-widget my-auto">
+                            <div class="title-box">
+                                <h3>Explore</h3>
+                            </div><!-- /.title-box -->
+                            <ul class="link-lists">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about/">About</a></li>
+                                <li><a href="/ourteam/">Our Team</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                                <li><a href="/contact/">Contact Us</a></li>
+                            </ul>
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-lg-2 -->
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 d-flex">
+                        <div class="footer-widget my-auto">
+                            <div class="btn-box">
+                                <a href="/demo/" class="thm-btn">Request a Demo</a>
+                                <span class="btn-tag-line">Try a better way <i class="payonline-icon-share"></i></span>
+                            </div><!-- /.btn-box -->
+                            <div class="social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div><!-- /.social -->
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-lg-5 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.upper-footer -->
+        <div class="bottom-footer">
+            <div class="container">
+                <p>&copy; Copyright 2021 by <a href="#!" target="_blank">Aditshsoft</a></p>
+            </div><!-- /.container -->
+        </div><!-- /.bottom-footer -->
+    </footer>
+</div>
+
+<section class="hidden-sidebar side-navigation">
+    <span class="close-button side-navigation-close-btn fa fa-close"></span><!-- /.close-button -->
+    <div class="sidebar-content">
+        <img src="{% static "frontend/images/hidden-bar-image-1-1.jpg" %}" alt="Awesome Image"/>
+        <p>Prefer speaking with a human to filling out a form? Call our corporate office and we will connect you with a team member <br> who can help.</p>
+        <p class="contact-info"><i class="fa fa-phone"></i>2800 666 999</p><!-- /.contact-info -->
+        <a href="#" class="download-btn one"><i class="fa fa-file-pdf-o"></i> Looking for your W-2?</a>
+        <a href="#" class="download-btn two"><i class="fa fa-building-o"></i> Payonline Sales Offices</a>
+    </div><!-- /.sidebar-content -->
+</section><!-- /.hidden-sidebar -->
+
+
+
+    <script src="{% static "frontend/js/jquery.js" %}"></script>
+    <script src="{% static "frontend/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "frontend/js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "frontend/js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "frontend/js/isotope.js" %}"></script>
+    <script src="{% static "frontend/js/bootstrap-select.min.js" %}"></script>
+    <script src="{% static "frontend/js/theme.js" %}"></script>
+
+      {% block script_code %}
+      {% endblock %}
+      
+   </body>
+</html>

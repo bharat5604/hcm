@@ -1,0 +1,233 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+<section class="banner banner-eight">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="banne-content-wrapper-eight">
+                    <!--  <h3 class="subtitle wow fadeInUp"><span>Get</span>Instant </h3>  -->
+                    <h2 class="banner-title wow fadeInUp" style="font-size:3rem;" data-wow-delay="0.3s">Aditsh</h2>
+                    <p class="description wow fadeInUp" data-wow-delay="0.5s">Welcome to Aditsh Group an Integrated BFSI Technology Platform</p>
+                    <div class="form-group row">
+                        <div class="col-md-2 col-sm-6">
+                            <select class="form-control country-code" style="border-color:#FF6263;" name="country_code" id="id_country_code" placeholder="Country Code">
+                                {% include 'frontend/country-codes.html' %}
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <input type="tel" class="form-control mobile-number" style="border-color:#FF6263;" pattern="[0-9]{10}" name="phone_no" id="id_phone_no" placeholder="Mobile">
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a role="button" href="#" target="_blank" class="btn btn-danger">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="banner-six-promo-image text-right">
+                    <img src="{% static 'frontend/img/t2.jpg' %}" class="wow pixZoomIn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-background-element">
+        <div class="circle-bg">
+        </div>
+    </div>
+</section>
+
+<section class="cd-slider mb-4">
+    <ul>
+        <li data-color="#FF384B">
+            <div class="content" style="background-image:url({% static 'frontend/img/slider-1.svg' %})">
+                <blockquote>
+                    <p>Banking Software Services Provider</p>
+                </blockquote>
+            </div>
+        </li>
+        <li data-color="#FF9C00">
+            <div class="content" style="background-image:url({% static 'frontend/img/slider-2.svg' %})">
+                <blockquote>
+                    <p>AI Based</p>
+                    <p>Software on SaaS</p>
+                </blockquote>
+            </div>
+        </li>
+        <li data-color="#002AFF">
+            <div class="content" style="background-image:url({% static 'frontend/img/slider-3.svg' %})">
+                <blockquote>
+                    <p>Complete Platform for Digital Lending</p>
+                </blockquote>
+            </div>
+        </li>
+        <li data-color="#38CC77">
+            <div class="content" style="background-image:url({% static 'frontend/img/slider-4.svg' %})">
+                <blockquote>
+                    <p>Next-gen AI Based Neobank App</p>
+                </blockquote>
+            </div>
+        </li>
+        <li data-color="#8D3DAF">
+            <div class="content" style="background-image:url({% static 'frontend/img/slider-5.svg' %})">
+                <blockquote>
+                    <p>AI Based</p>
+                    <p>Lending ERP</p>
+                </blockquote>
+            </div>
+        </li>
+    </ul>
+    <nav class="slider-nav">
+        <div><a class="prev" href="#"></a></div>
+        <div><a class="next" href="#"></a></div>
+    </nav>
+</section>
+
+<section class="app-tabs">
+    <div class="container-wrap bg-color-green">
+        <div class="container">
+            <div id="pix-tabs" class="tabs-three">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="download-tab-content mt-md-n5">
+                            <div class="section-title style-five text-center">
+                                <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Our Services</h2>
+                            </div>
+                            <ul id="pix-tabs-nav" class="wow fadeInUp d-flex flex-row" data-wow-delay="0.7s">
+                                <li><a href="#feature_tab1"> Employees</a></li>
+                                <li ><a href="#feature_tab2" >Shop Keepers</a></li>
+                                <li><a href="#feature_tab3"> Self  Employed
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="tabs-content-wrapper">
+                            <div id="pix-tabs-content" class="job-board-tabs-content wow fadeIn">
+                                <div id="feature_tab1" class="content">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="tab-image"><img src="{% static "frontend/img/employee.jpeg" %}" alt=""></div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="service-container">
+                                                <ul class="service-list ">
+                                                    {% for category, services in services_dict.items %}
+                                                    {% if category == 'employees' %}
+                                                    {% for x in services %}
+                                                    <li><a href="/services/{{category}}/{{x.1}}">{{x.0}}</a></li>
+                                                    {% endfor %}
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="feature_tab2" class="content">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="tab-image"><img src="{% static 'frontend/img/shopkeeper.jpg' %}" alt=""></div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="service-container">
+                                                <ul class="service-list">
+                                                    {% for category, services in services_dict.items %}
+                                                    {% if category == 'shop-keepers' %}
+                                                    {% for x in services %}
+                                                    <li><a href="/services/{{category}}/{{x.1}}">{{x.0}}</a></li>
+                                                    {% endfor %}
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="feature_tab3" class="content">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="tab-image"><img src="{% static 'frontend/img/selfemployed.jpeg' %}" alt=""></div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <div class="service-container">
+                                                <ul class="service-list">
+                                                    {% for category, services in services_dict.items %}
+                                                    {% if category == 'self-employed' %}
+                                                    {% for x in services %}
+                                                    <li><a href="/services/{{category}}/{{x.1}}">{{x.0}}</a></li>
+                                                    {% endfor %}
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-bg-shape-wrapper">
+                                <div class="dot"><img src="{% static 'frontend/img/dot1.png' %}" class="dot-shape" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brand-logo-ab">
+    <div class="section-small text-center">
+        <h2 class="title wow pixFadeUp">Our Business Partners</h2>
+    </div>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for x in partners_list %}
+                <div class="swiper-slide">
+                    <div class="brand-logo"><img class="img-responsive" src="{{x}}" alt="brand"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-six" data-bg-image="media/background/testimonial-bg.svg" style="background-image: url(../img/1.png);">
+    <div class="container">
+        <div class="section-title style-four text-center">
+            <h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: i;">Testimonials</h2>
+            <h3 class="sub-title wow pixFadeUp" style="visibility: visible; animation-name: i;">What our customers are saying</h3>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for x in testimonials_list %}
+                <div class="swiper-slide">
+                    <div class="testimonial-six">
+                        <div class="testi-content-inner">
+                            <div class="testimonial-content">
+                                <p>{{x.3}}</p>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="testimonial-bio">
+                                <div class="avatar"><img src="{{x.0}}" alt=""></div>
+                                <div class="bio-info">
+                                    <h3 class="name">{{x.1}}</h3>
+                                    <span class="job">{{x.2}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

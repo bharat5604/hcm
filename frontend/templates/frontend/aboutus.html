@@ -1,0 +1,39 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+  <div class="inner-banner text-center">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <span>About</span>
+                </li>
+            </ul><!-- /.breadcrumb -->
+            <h1>About  </h1>
+        </div><!-- /.container -->
+    </div><!-- /.inner-banner -->
+    
+    <section class="sec-pad cta-five home-five">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cta-content">
+                        <div class="sec-title">
+                            <span>About Aditsh HR</span>
+                            <h2>Aditsh HR provides the best <br> solution for your small and <br> large businesses</h2>
+                        </div><!-- /.sec-title -->
+                        <p>Aditsh HR promise provides the ultimate peace of mind for your business - protection against payroll interruptions. We provide you the flexibility to extend the collection of payroll funds from your bank account by up to seven days. So you can protect against unexpected business challenges and deliver on your employees’ favorite day.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div><!-- /.cta-content -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6 d-flex">
+                    <div class="featured-image-box my-auto">
+                        <img src="{% static "frontend/images/mockup-1-5.png" %}" alt="Awesome Image"/>
+                    </div><!-- /.featured-image-box -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.black-shape-bg -->
+{% endblock %}

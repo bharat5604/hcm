@@ -1,0 +1,12 @@
+// ********************* Variables ***************************
+$blueColor:#0f6fd5;
+$redColor:#ee3234;
+$white:#f6f6f6;
+$black:#1111;
+
+// ******************** Header start *************************
+.myheader{
+    .navbar-brand{
+        color: $white;
+    }
+}
